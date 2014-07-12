@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    background-position: center bottom;
+    margin-right: auto;
+    margin-left: auto;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+    color: #333333;
+    min-height:400px;
+}
+#wrapper {
+    margin: 0px;
+    padding: 0px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center top;
+    border-top-width: 1px;
+    border-top-style: solid;
+    background-image: url(../images/headerimage.jpg);
+    text-align: center;
+}
+#floater {
+    float: right;
+    width: 229px;
+    padding: 3px;
+    text-align: center;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-image: url(../images/transparentwhite.png);
+    margin-top: 65px;
+    margin-right: -40px;
+}
+#floater .reservations {
+    font-size: 100%;
+    font-weight: bold;
+    color: #666666;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+#floater .reservations a {
+    color: #333333;
+}
+#floater p {
+    font-size: 75%;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
+#floater img {
+    margin-top: 10px;
+}
+#floater    a   {
+    color: #333333;
+    text-decoration:underline;
+    font-weight: bold;
+}
+#floater  a:hover, #floater a:visited  {
+    color: #999999;
+    text-decoration:underline;
+    font-weight: bold;
+}
+#header {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 159px;
+    width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding: 1px 0px;
+    text-align: left;
+}
+#header h1 {
+    margin: 60px 0px 0px 160px;
+    padding: 0px;
+    font-size: 200%;
+}
+#header h2 {
+    margin: 0px 0px 0px 200px;
+    font-size: 175%;
+}
+#header h3 {
+    font-size: 180%;
+    margin: 0px 0px 0px 220px;
+}
+#content {
+    font-size: 100%;
+    width: 700px;
+    text-align: left;
+    margin: 0px auto;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+#content label {
+    margin-right: 10px;
+}
+#content h1 {
+    font-size: 130%;
+    margin: 10px 0px;
+}
+#content h3 {
+    margin: 5px 0px 20px 0px;
+}
+#content h4 {
+    margin: 5px 0px 5px 0px;
+}
+#content p {
+    margin: 0px 0px 10px 0px;
+}
+#content ol {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.scheduleLink  {
+    font-weight: bold;
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#schedule {
+    text-align: left;
+    margin: 0px auto;
+    width: 100%;
+}
+#schedule h3 {
+    margin-top: 3px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    text-align: left;
+    float: left;
+}
+#schedule p {
+    text-align: left;
+    margin: 3px 0px;
+    clear: left;
+}
+#schedule table {
+    background-color: #ffffff;
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+    /*border: 1px solid #ffffff;*/
+    border-spacing: 1px;
+    font-size: 80%;
+}
+#schedule th {
+    color: #FFFFFF;
+    background-color: #666666;
+    padding: 5px 2px 5px 10px;
+    text-align: left;
+    /*border: 1px solid #E7E7E7;*/
+}
+#schedule td {
+    text-align: left;
+    border: 1px solid #E7E7E7;
+    margin: 0px;
+    padding: 0px;
+    background-color:#E1E1E1;
+}
+#schedule .times {
+    background-color: #999999;
+    color: #fff;
+    text-align: center;
+    margin:5px;
+}
+#schedule .alignCentre {
+    text-align: center;
+}
+#schedule .scheduleItem, #schedule .scheduleItemNonSelect {
+    font-weight: bold;
+    background-color: #FFFFFF;
+    padding: 5px;
+    vertical-align:top;
+}
+#schedule .scheduleItem p {
+    padding: 0px;
+    margin:0px;
+}
+#schedule .scheduleItem:hover {
+    background-color:#F2F2F2;
+    color:#333333;
+}
+#schedule .selected, #schedule .selected:hover {
+    background-color: #8E9990;
+    color:#ffffff;
+}
+#schedule label {
+    cursor:pointer;
+    display: block;
+    margin: 0px 15px;
+    text-align:left;
+}
+#schedule input {
+    float:left;
+    margin: 0px 0px 0px -15px;
+}
+#schedule .workgroup {
+    cursor:pointer;
+    display: block;
+    margin: auto 18px;
+    text-align:left;
+}
+label, input {
+    cursor:pointer;
+}
+.dottheline {
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: #999999;
+}
+
+#schedule .number {
+    float: left;
+    margin: 0px 0px 0px -20px;
+}
+#displayCost {
+    font-weight: bold;
+    font-size: 120%;
+    float: right;
+    margin: 0px 50px 10px 10px;
+    width: auto;
+    background-color: white;
+    padding: 5px 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+#displayCost   p {
+    clear: right;
+}
+#displayCost  .priceDisp {
+    float: right;
+}
+#footer {
+    height: 300px;
+    display: block;
+    clear: both;
+}
+#comments {
+    clear: both;
+    margin-top: 10px;
+}
+#comments .commentField {
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+#conditions {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #666666;
+    color:#FFFFFF;
+    padding: 10px 20px;
+    clear: left;
+    margin: 20px 0px 10px 0px;
+}
+#conditions a:link {
+    color:#FFFFFF;
+}
+.red {
+    color:#990000;
+}
+.makeitsmall {
+    font-size: 80%;
+    margin: 10px 0px;
+    list-style-type: none;
+}
+#totaling h3, #totaling p {
+    margin:3px 0px;
+}
+.floatLeft {
+	float:left;	
+}
+.floatRight {
+	float:right;	
+}
+.clearLeft {
+	clear:left;
+}
+.clearRight {
+	clear:right;	
+}
+.clearBoth {
+	clear:both;	
+}
+.halfCol {
+	width: 45%;
+}

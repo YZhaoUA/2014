@@ -1,0 +1,128 @@
+#registration {
+    clear: left;
+}
+#registration .formBlock h3 {
+    margin:5px 0px 5px 0px;
+}
+#registration input[type=text], #registration select, #registration .whiteField {
+    color: #000000;
+    width: 95%;
+    font-weight: bold;
+    font-size: 110%;
+    border: 1px solid #999999;
+}
+#registration .formBlock .leftCol {
+    float: left;
+    width: auto;
+    margin: 0px 15px 10px 0px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #CCCCCC;
+}
+#registration .formBlock .leftCol p {
+    font-size: 80%;
+    /*white-space: normal;*/
+    margin: 0;
+    font-weight: bold;
+}
+#registration .formBlock .required {
+    padding: 3px 8px;
+    background-color: #999999;
+}
+#registration .formBlock .summaries {
+    padding: 15px 15px 20px 15px;
+    font-size: 120%;
+}
+#registration .formBlock .summaries p {
+    margin: 10px 0px 10px 0px;
+}
+#registration .formBlock .required input[type=text], #registration .formBlock .required select, #registration .formBlock .requiredMarker {
+    color: #333333;
+}
+#registration .formBlock .notRequired {
+    padding: 3px 8px;
+    background:#CCCCCC;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+#registration .formBlock .notRequired input[type=text], #registration .formBlock .notRequired select {
+    color: #333333;
+    background-color: #ffffff;
+    border:1px solid #CCCCCC;
+}
+#billing {
+    background:#CCCCCC;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+#billing  h4 {
+    padding: 10px;
+    font-weight: normal;
+    font-size: 110%;
+}
+
+#billingInfo {
+    padding: 0px 0px 0px 10px;
+    width: 100%;
+}
+.errorfield, .processError {
+    background:red;
+    padding:5px 10px;
+    width: auto;
+    color: #ffffff;
+    display: none;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    margin-left:10px;
+}
+#processResponse{
+    margin: 5px 0px;
+}
+.processError {
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+}
+.processError h1, .processError h2, .processError h3, .processError p {
+    margin: 0px;
+}
+.full {
+    color: #999999;
+    font-style:italic;
+}
+.transformButtonStyle {
+    /* restyle buttons */
+    font-size: 115%;
+    border: none;
+    background-color: #333333;
+    font-weight: bold;
+    color: #ffffff;
+    width: auto;
+    text-decoration: none;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    padding-top: 3px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    /*white-space: nowrap;*/
+    display: inline-block;
+}
+.transformButtonStyle:hover {
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+}
+.sponCategory {
+    clear:left;
+}

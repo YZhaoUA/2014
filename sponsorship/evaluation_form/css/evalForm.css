@@ -1,0 +1,10 @@
+@charset "UTF-8";
+label {
+    margin-right: 10px;
+}
+label input[type=checkbox] {
+    margin-right: 5px;	
+}.dis {
+    background-color: #CCC;
+    border: solid black 2px;
+}
