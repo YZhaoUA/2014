@@ -75,7 +75,7 @@ $date = date('F j, Y');
 $invoice_info = str_replace("{date}", $date, $invoice_info);
 $invoice_info = str_replace("{fname}", $fname, $invoice_info);
 $invoice_info = str_replace("{lname}", $lname, $invoice_info);
-$invoice_info = str_replace("{company}", $compan013y, $invoice_info);
+$invoice_info = str_replace("{company}", $company, $invoice_info);
 $full_address = $address1;
 if ($address2) {
     $full_address .= ", " . $address2;
