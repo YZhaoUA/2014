@@ -1,6 +1,0 @@
-AuthName "ipcreg.incentre.net"
-AuthType Basic
-AuthUserFile /var/www/10af4156/banffpipelinereg.incentre.net/secure/2014/sponsorship/reports/.htpasswd
-<Limit GET>
-require valid-user
-</Limit>
