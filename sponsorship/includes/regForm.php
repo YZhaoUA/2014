@@ -17,7 +17,7 @@ $selectStmt = "select sid from $tablesponsor where sponcode = 'CBMP' and reg_sta
 $selectresult = mysql_query($selectStmt) or die("Picking SID Query failed : " . mysql_error() . "<BR><BR>The statement being executed is: " . $selectStmt);
 if (mysql_num_rows($selectresult) > 0) {
     $availMondayPm = FALSE;
-}
+} else $availMondayPm = FALSE;
 
 $selectStmt = "select sid from $tablesponsor where sponcode = 'CBTA' and reg_status = '' and (`totaldue`=0 or paytype='MAIL')";
 $selectresult = mysql_query($selectStmt) or die("Picking SID Query failed : " . mysql_error() . "<BR><BR>The statement being executed is: " . $selectStmt);
@@ -28,7 +28,7 @@ $selectStmt = "select sid from $tablesponsor where sponcode = 'CBTP' and reg_sta
 $selectresult = mysql_query($selectStmt) or die("Picking SID Query failed : " . mysql_error() . "<BR><BR>The statement being executed is: " . $selectStmt);
 if (mysql_num_rows($selectresult) > 0) {
     $availTuesdayPm = FALSE;
-}
+} else $availTuesdayPm = FALSE;
 
 $selectStmt = "select sid from $tablesponsor where sponcode = 'CBWA' and reg_status = '' and (`totaldue`=0 or paytype='MAIL')";
 $selectresult = mysql_query($selectStmt) or die("Picking SID Query failed : " . mysql_error() . "<BR><BR>The statement being executed is: " . $selectStmt);
@@ -39,7 +39,7 @@ $selectStmt = "select sid from $tablesponsor where sponcode = 'CBWP' and reg_sta
 $selectresult = mysql_query($selectStmt) or die("Picking SID Query failed : " . mysql_error() . "<BR><BR>The statement being executed is: " . $selectStmt);
 if (mysql_num_rows($selectresult) > 0) {
     $availWednesdayPm = FALSE;
-}
+} else $availWednesdayPm = FALSE;
 
 ?>
 
@@ -426,10 +426,10 @@ if (!isset($sid) || $sid == "") {
 
             <div id="CBRK" class="sponCategory" style="display:none;">
                 <div id="billing" style="margin:10px 0px;">
-                    <p>Choose the Day and Time:</p>
+                    <p>Choose a Day: <br> (each spot includes both the morning and afternoon coffee breaks for the given day)</p>
 							<hr style="margin-top: 15px;">
-                        <p>Monday</p>
-							<div class="floatLeft halfCol"><p><label><?php if ($availMondayAm): ?>
+<!--                        <p>Monday</p>-->
+							<div class="floatLeft"><p><label><?php if ($availMondayAm): ?>
                                 <input <?php
                                 if (!(strcmp("$sponcode", "CBMA"))) {
                                     echo "checked=\"checked\"";
@@ -438,10 +438,10 @@ if (!isset($sid) || $sid == "") {
                                 <?php else: ?>
                                 (Filled)
                             <?php endif; ?>
-                            AM
+                            Monday
                         </label></p>
                         </div>
-							<div class="floatRight halfCol">
+							<div class="floatRight" style="display: none">
                         <p><label><?php if ($availMondayPm): ?>
                                 <input <?php
                                 if (!(strcmp("$sponcode", "CBMP"))) {
@@ -455,8 +455,8 @@ if (!isset($sid) || $sid == "") {
                         </label></p></div>
 						<div class="clearBoth"></div>
 						<hr style="margin-top: 15px;">
-						<p>Tuesday</p>
-                       <div class="floatLeft halfCol"><p> <label>
+<!--						<p>Tuesday</p>-->
+                       <div class="floatLeft"><p> <label>
                             <?php if ($availTuesdayAm): ?>
                                 <input <?php
                                 if (!(strcmp("$sponcode", "CBTA"))) {
@@ -466,10 +466,10 @@ if (!isset($sid) || $sid == "") {
                                 <?php else: ?>
                                 (Filled)
                             <?php endif; ?>
-                            AM
+                            Tuesday
                         </label>
                         </p></div>
-							<div class="floatRight halfCol">
+							<div class="floatRight" style="display: none">
 							<p>
                         <label>
                             <?php if ($availTuesdayPm): ?>
@@ -487,8 +487,8 @@ if (!isset($sid) || $sid == "") {
 						</div>
 						<div class="clearBoth"></div>
 							<hr style="margin-top: 15px;">
-							<p>Wednesday</p>
-							<div class="floatLeft halfCol">
+<!--							<p>Wednesday</p>-->
+							<div class="floatLeft">
 							<p>
                         <label>
                             <?php if ($availWednesdayAm): ?>
@@ -500,11 +500,11 @@ if (!isset($sid) || $sid == "") {
                                 <?php else: ?>
                                 (Filled)
                             <?php endif; ?>
-                            AM
+                            Wednesday
                         </label>
                         </p>
 						</div>
-						<div class="floatRight halfCol">
+						<div class="floatRight" style="display: none">
 						<p>
                         <label>
                             <?php if ($availWednesdayPm): ?>
