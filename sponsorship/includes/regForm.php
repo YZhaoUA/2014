@@ -359,7 +359,7 @@ if (!isset($sid) || $sid == "") {
                     (includes 3 complimentary registrations)</label>
             </p>
             
-            <div  id="PTRN" class="sponCategory" style="display:none">
+            <div  id="PTRN_AlwaysHidden" class="sponCategory" style="display:none">
                 <div id="billing" >
                     <p>
                         <br>
